@@ -21,6 +21,7 @@
         </div>
         <div v-if="showTheEnd">
           <div style="text-align: center; font-size: 100px; margin-top: 30px; font-weight: bold;  font-family: YouSheBiaoTiHei;" class="good-end-line3">The End</div>
+          <div style="text-align: center; font-size: 100px; margin-top: 30px; font-weight: bold;  font-family: YouSheBiaoTiHei;" class="good-end-line3">剧本：许镕志 程序：蒋正</div>
         </div>
       </div>
     </div>
