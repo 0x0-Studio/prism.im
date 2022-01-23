@@ -964,6 +964,11 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
+"@mdi/font@^6.5.95":
+  version "6.5.95"
+  resolved "https://registry.yarnpkg.com/@mdi/font/-/font-6.5.95.tgz#203922f6dd46397de9eb1f5956b85339adb6344d"
+  integrity sha512-ES5rj6J39FUkHe/b3C9SJs8bqIungYhuU7rBINTBaHOv/Ce4RCb3Gw08CZVl32W33UEkgRkzyWaIedV4at+QHg==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.npm.taobao.org/@mrmlnc/readdir-enhanced/download/@mrmlnc/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
@@ -1635,6 +1640,11 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.npmmirror.com/alphanum-sort/download/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
+animejs@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/animejs/-/animejs-3.2.1.tgz#de9fe2e792f44a777a7fdf6ae160e26604b0cdda"
+  integrity sha512-sWno3ugFryK5nhiDm/2BKeFCpZv7vzerWUcUPyAZLDhMek3+S/p418ldZJbJXo5ZUOpfm2kP2XRO4NJcULMy9A==
+
 ansi-colors@^3.0.0:
   version "3.2.4"
   resolved "https://registry.npm.taobao.org/ansi-colors/download/ansi-colors-3.2.4.tgz#e3a3da4bfbae6c86a9c285625de124a234026fbf"
@@ -2132,6 +2142,13 @@ browserslist@^4.0.0, browserslist@^4.12.0, browserslist@^4.17.5, browserslist@^4
     node-releases "^2.0.1"
     picocolors "^1.0.0"
 
+buefy@^0.9.14:
+  version "0.9.14"
+  resolved "https://registry.yarnpkg.com/buefy/-/buefy-0.9.14.tgz#f0441ece5255fa757bf9956761415341d18fe68b"
+  integrity sha512-4+8xLQBHm7H+XmCNXvEmFY01gYHvGIkMGBLxcCpbumrt5Eyj21JP7I6G313tLaT2XDk06IiNSnqgPxzFExHPjQ==
+  dependencies:
+    bulma "0.9.3"
+
 buffer-from@^1.0.0:
   version "1.1.2"
   resolved "https://registry.nlark.com/buffer-from/download/buffer-from-1.1.2.tgz?cache=0&sync_timestamp=1627578710888&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fbuffer-from%2Fdownload%2Fbuffer-from-1.1.2.tgz#2b146a6fd72e80b4f55d255f35ed59a3a9a41bd5"
@@ -2165,6 +2182,11 @@ builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/builtin-status-codes/download/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
+
+bulma@0.9.3:
+  version "0.9.3"
+  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.9.3.tgz#ddccb7436ebe3e21bf47afe01d3c43a296b70243"
+  integrity sha512-0d7GNW1PY4ud8TWxdNcP6Cc8Bu7MxcntD/RRLGWuiw/s0a9P+XlH/6QoOIrmbj6o8WWJzJYhytiu9nFjTszk1g==
 
 bytes@3.0.0:
   version "3.0.0"
@@ -2986,6 +3008,11 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
+dayjs@^1.10.7:
+  version "1.10.7"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.10.7.tgz#2cf5f91add28116748440866a0a1d26f3a6ce468"
+  integrity sha512-P6twpd70BcPK34K26uJ1KT3wlhpuOAPoMwJzpsIWUxHZ7wpmbdZL/hQqBDfz7hGurYSa5PhzdhDHtt319hL3ig==
+
 de-indent@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/de-indent/download/de-indent-1.0.2.tgz#b2038e846dc33baa5796128d0804b455b8c1e21d"
@@ -3314,6 +3341,11 @@ elliptic@^6.5.3:
     inherits "^2.0.4"
     minimalistic-assert "^1.0.1"
     minimalistic-crypto-utils "^1.0.1"
+
+emoji-picker-element@^1.8.2:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/emoji-picker-element/-/emoji-picker-element-1.10.0.tgz#0bc1d62fec69a522efcd0f0744f8b1d9184476cc"
+  integrity sha512-l1sP3PbALkftO/WUS6Ba+lUPFdMVURsgE/RDoruyc97IlMjnbjOINRmreca2G1F9jwg69ePtcVpk8iOivnrDPQ==
 
 emoji-regex@^7.0.1:
   version "7.0.3"
@@ -5127,6 +5159,13 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.npm.taobao.org/kind-of/download/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha1-B8BQNKbDSfoG4k+jWqdttFgM5N0=
 
+lamejs@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/lamejs/-/lamejs-1.2.0.tgz#0259f83db4666141a7b671b8caa6369d95177d08"
+  integrity sha1-Aln4PbRmYUGntnG4yqY2nZUXfQg=
+  dependencies:
+    use-strict "1.0.1"
+
 launch-editor-middleware@^2.2.1:
   version "2.3.0"
   resolved "https://registry.npmmirror.com/launch-editor-middleware/download/launch-editor-middleware-2.3.0.tgz#edd0ed45a46f5f1cf27540f93346b5de9e8c3be0"
@@ -5154,6 +5193,11 @@ lines-and-columns@^1.1.6:
   version "1.2.4"
   resolved "https://registry.npmmirror.com/lines-and-columns/download/lines-and-columns-1.2.4.tgz#eca284f75d2965079309dc0ad9255abb2ebc1632"
   integrity sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==
+
+linkifyjs@^2.1.9:
+  version "2.1.9"
+  resolved "https://registry.yarnpkg.com/linkifyjs/-/linkifyjs-2.1.9.tgz#af06e45a2866ff06c4766582590d098a4d584702"
+  integrity sha512-74ivurkK6WHvHFozVaGtQWV38FzBwSTGNmJolEgFp7QgR2bl6ArUWlvT4GcHKbPe1z3nWYi+VUdDZk16zDOVug==
 
 loader-fs-cache@^1.0.0:
   version "1.0.3"
@@ -5235,6 +5279,11 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.npm.taobao.org/lodash.memoize/download/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
+
+lodash.split@^4.4.2:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/lodash.split/-/lodash.split-4.4.2.tgz#a7f7bd9f37968b9312428e2f3ac3fb3173c4c3c6"
+  integrity sha1-p/e9nzeWi5MSQo4vOsP7MXPEw8Y=
 
 lodash.transform@^4.6.0:
   version "4.6.0"
@@ -8042,6 +8091,11 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
+use-strict@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/use-strict/-/use-strict-1.0.1.tgz#0bb80d94f49a4a05192b84a8c7d34e95f1a7e3a0"
+  integrity sha1-C7gNlPSaSgUZK4Sox9NOlfGn46A=
+
 use@^3.1.0:
   version "3.1.1"
   resolved "https://registry.npmmirror.com/use/download/use-3.1.1.tgz#d50c8cac79a19fbc20f2911f56eb973f4e10070f"
@@ -8104,6 +8158,11 @@ uuid@^8.3.2:
   resolved "https://registry.npmmirror.com/uuid/download/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
   integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
+v-click-outside@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/v-click-outside/-/v-click-outside-3.1.2.tgz#1dbaa14bf09a21bd16f23a38f03bfa3988f71281"
+  integrity sha512-gMdRqfRE6m6XU6SiFi3dyBlFB2MWogiXpof8Aa3LQysrl9pzTndqp/iEaAphLoadaQUFnQ0ec6fLLaxr7LiY6A==
+
 v8-compile-cache@^2.0.3:
   version "2.3.0"
   resolved "https://registry.nlark.com/v8-compile-cache/download/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
@@ -8140,6 +8199,17 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.npmmirror.com/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
+
+vue-advanced-chat@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/vue-advanced-chat/-/vue-advanced-chat-1.5.1.tgz#d214e02c2f5f9eae5c782dbb7f896f89748ab4f1"
+  integrity sha512-nNkWBotJUOiiektfKfDYjFAA96dYwXYRtRSaILWLcLgKg0SdOoIJCHEHciQr4ng9oE+DG2sPzs2O+KCrSOst2A==
+  dependencies:
+    emoji-picker-element "^1.8.2"
+    linkifyjs "^2.1.9"
+    v-click-outside "^3.1.2"
+  optionalDependencies:
+    lamejs "1.2.0"
 
 vue-eslint-parser@^7.0.0:
   version "7.11.0"
@@ -8179,6 +8249,16 @@ vue-loader@^15.9.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-native-notification@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/vue-native-notification/-/vue-native-notification-1.1.1.tgz#8a57950dded83b05b9e261f45bc2e027107eb9cd"
+  integrity sha512-UnMjJvhmI+Vp40hcb8EswEJqg2O2fsxSmJbDqlbIglfmCiL62TYMKwcSU7ESjSTBDI+4wOXKzGZGR7jfr//MVw==
+
+vue-router@^3.5.3:
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.5.3.tgz#041048053e336829d05dafacf6a8fb669a2e7999"
+  integrity sha512-FUlILrW3DGitS2h+Xaw8aRNvGTwtuaxrRkNSHWTizOfLUie7wuYwezeZ50iflRn8YPV5kxmU2LQuu3nM/b3Zsg==
+
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.3"
   resolved "https://registry.npmmirror.com/vue-style-loader/download/vue-style-loader-4.1.3.tgz#6d55863a51fa757ab24e89d9371465072aa7bc35"
@@ -8200,10 +8280,22 @@ vue-template-es2015-compiler@^1.9.0:
   resolved "https://registry.nlark.com/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
 
+vue-typer@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/vue-typer/-/vue-typer-1.2.0.tgz#08d95785a2817959b92276055cdf272d8986500b"
+  integrity sha512-o0n2F9yOnbdQak1OiPFbZonIzysL5jiS1OPgaEX0KnMlKqXRKi808QHRdoMuqw44oYQM/vtxCt3AaNb9OzKH1Q==
+  dependencies:
+    lodash.split "^4.4.2"
+
 vue@^2.6.11:
   version "2.6.14"
   resolved "https://registry.npmmirror.com/vue/download/vue-2.6.14.tgz#e51aa5250250d569a3fbad3a8a5a687d6036e235"
   integrity sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ==
+
+vuex@^3.6.2:
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/vuex/-/vuex-3.6.2.tgz#236bc086a870c3ae79946f107f16de59d5895e71"
+  integrity sha512-ETW44IqCgBpVomy520DT5jf8n0zoCac+sxWnn+hMe/CzaSejb/eVw2YToiXYX+Ex/AuHHia28vWTq4goAexFbw==
 
 watchpack-chokidar2@^2.0.1:
   version "2.0.1"
