@@ -36,10 +36,6 @@ export default {
       {
         key: 1,
         value: '祝妈妈生日快乐'
-      },
-      {
-        key: 2,
-        value: '下班回到家，打个卡'
       }
     ],
     doneList: [

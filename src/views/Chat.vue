@@ -25,6 +25,7 @@
           </b-tooltip>
           <div>{{ userStatus }}</div>
         </div>
+        <div style="position: absolute; width: 100px; height: 30px; left: 50%; font-size: 16px; " v-if="isTyping">正在输入...</div>
       </template>
     </chat-window>
     <div ref="typing" class="typing">
@@ -67,6 +68,7 @@ export default {
   },
   computed: {
     ...mapState({
+      isTyping: state => state.isTyping,
       end: (state) => state.end,
       gameState: (state) => state.gameState,
       optionsTemp: (state) => state.options,
@@ -92,6 +94,7 @@ export default {
   },
   methods: {
     typeCompleted() {
+      this.$store.commit("setIsTyping", false);
       this.roomMessage = this.inputMessage;
     },
     sendMessage() {
@@ -122,6 +125,7 @@ export default {
       }
     },
     input(answer) {
+      this.$store.commit("setIsTyping", true);
       this.selectedAnswer = answer;
       this.inputMessage = answer.value;
     },

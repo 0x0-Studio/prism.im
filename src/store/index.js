@@ -7,6 +7,7 @@ Vue.use(Vuex);
 
 const store = new Vuex.Store({
   state: {
+    isTyping: false,
     gameState: 'writeDiary',
     end: "bad",
     data: null,
@@ -140,7 +141,7 @@ const store = new Vuex.Store({
       {
         title: "日记一 2021年7月17日 星期六 阳光明媚",
         lock: false,
-        value: "周六本应该也算是休息，法定休息日好吗！为什么又要加班！\n越想越难受，这周本来有我的生日，结果因为是工作日，要上班，生日聚会的机会都没有，而且还加班了。\n就我一个人在干，我太拼了，可是领导压根就不知道我的辛苦，他以为剪视频就像写流水账这么简单？？真就不把人当人。\n今天有正事要说，我妈妈，对，就是那个抛弃了我的妈妈，她发消息给我了。突然脑子一片混乱，她怎么有脸来找我的啊？她能不能自己跟那个家庭的人好好过？别来烦我，我不想了解她的近况！我不想知道关于她的任何东西！"
+        value: "周六本应该也算是休息，法定休息日好吗！为什么又要加班！\n越想越难受，本来今年想好好办一个生日会，结果因为是周四，要上班，很多人都没法来，而且还加班了。\n就我一个人在干，我太拼了，可是领导压根就不知道我的辛苦，他以为剪视频就像写流水账这么简单？？真就不把人当人。\n今天有正事要说，我妈妈，对，就是那个抛弃了我的妈妈，她发消息给我了。突然脑子一片混乱，她怎么有脸来找我的啊？她能不能自己跟那个家庭的人好好过？别来烦我，我不想了解她的近况！我不想知道关于她的任何东西！"
       },
       {
         title: "日记四 2021年7月20日 星期二 阴雨连绵",
@@ -243,6 +244,9 @@ const store = new Vuex.Store({
       this.npcConv = state.data.npc;
       this.playerConv = state.data.player;
     },
+    setIsTyping(state, isTyping) {
+      state.isTyping = isTyping;
+    },
     setEnd(state, payload) {
       state.end = payload;
     },
@@ -274,6 +278,9 @@ const store = new Vuex.Store({
             state.gameState = 'diaryYesterday';
             break;
           default:
+            setTimeout(() => {
+              state.isTyping = true;
+            }, 100);
             var time = 0;
             var unullCount = 0;
             for (let j in this.npcConv[k]) {
@@ -281,7 +288,6 @@ const store = new Vuex.Store({
                 unullCount++;
               }
             }
-            console.log(unullCount)
             for (let i in this.npcConv[k]) {
               if(this.npcConv[k][i] !== 0) {
                 time += this.npcConv[k][i].body.length * 150;
@@ -297,6 +303,7 @@ const store = new Vuex.Store({
                     to: this.npcConv[k][i].to,
                   })
                   if (parseInt(i) === unullCount - 1) {
+                    state.isTyping = false;
                     if (this.npcConv[k][i].id === '1.4.1') {
                       resolve('needAsk');
                     } else if (this.npcConv[k][i].id === '1.34.5') {

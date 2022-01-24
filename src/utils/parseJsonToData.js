@@ -18,6 +18,5 @@ export default function parseJsonToData() {
       player[parseInt(splited[1]) - 1][parseInt(splited[2]) - 1] = data[i];
     }
   }
-  console.log(player)
   return { npc, player };
 }

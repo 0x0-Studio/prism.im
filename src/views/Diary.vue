@@ -144,7 +144,6 @@ export default {
       this.currentDiary = -1;
     },
     clickDiary(index, resendable) {
-      console.log(index)
       if (resendable) {
         if (!this.diary[index].lock) {
           this.currentDiary = index;

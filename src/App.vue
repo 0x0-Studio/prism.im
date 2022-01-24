@@ -59,7 +59,6 @@ export default {
       }
     },
     gameState() {
-      console.log(this.gameState);
       if (this.gameState === "end") {
         if (this.end === "good") {
           this.endingIsGood = true;
