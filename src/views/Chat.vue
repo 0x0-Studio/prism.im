@@ -129,6 +129,7 @@ export default {
       this.roomsLoaded = true;
     },
     fetchMessages({ room }) {
+      this.inputMessage = " ";
       this.messageLoaded = false;
       this.currentRoom = room.roomId;
       switch (room.roomId) {

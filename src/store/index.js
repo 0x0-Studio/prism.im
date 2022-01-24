@@ -152,7 +152,7 @@ const store = new Vuex.Store({
       {
         roomId: 1,
         roomName: "Me",
-        roomDesc: "对自己好点",
+        roomDesc: "24岁了，对自己好点",
         avatar:
           "/me.jpeg",
         unreadCount: 0,
