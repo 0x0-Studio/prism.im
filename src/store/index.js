@@ -343,6 +343,7 @@ const store = new Vuex.Store({
       }).then((result) => {
         if (result === 'needAsk') {
           this.commit("setGameState", "ask");
+          state.options = [];
         } else if (result === 'goodEnd') {
           setTimeout(() => {
             state.options = [];
