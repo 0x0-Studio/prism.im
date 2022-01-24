@@ -68,6 +68,8 @@ export default {
   },
   computed: {
     ...mapState({
+      currentRoom: state => state.currentRoom,
+      momTyping: state => state.momTyping,
       isTyping: state => state.isTyping,
       end: (state) => state.end,
       gameState: (state) => state.gameState,
@@ -125,7 +127,9 @@ export default {
       }
     },
     input(answer) {
-      this.$store.commit("setIsTyping", true);
+      if (this.currentRoom === 1) {
+        this.$store.commit("setIsTyping", true);
+      }
       this.selectedAnswer = answer;
       this.inputMessage = answer.value;
     },
@@ -135,13 +139,19 @@ export default {
     fetchMessages({ room }) {
       this.inputMessage = " ";
       this.messageLoaded = false;
-      this.currentRoom = room.roomId;
+      this.$store.commit("setCurrentRoom", room.roomId);
       switch (room.roomId) {
         case 1:
-          this.options = this.optionsTemp;
           this.messages = this.$store.state.me;
+          if (this.momTyping) {
+            this.$store.commit("setIsTyping", true);
+            this.options = [];
+          } else {
+            this.options = this.optionsTemp;
+          }
           break;
         case 2:
+          this.$store.commit("setIsTyping", false);
           if (this.end === "good") {
             this.options = [
               {
@@ -156,6 +166,7 @@ export default {
           this.messages = this.$store.state.mom;
           break;
         case 3:
+          this.$store.commit("setIsTyping", false);
           this.messages = this.$store.state.dev;
           if (this.gameState === "ask") {
             this.options = [
@@ -178,7 +189,6 @@ export default {
     },
   },
   data: () => ({
-    currentRoom: 1,
     selectedAnswer: null,
     roomMessage: "",
     inputMessage: " ",

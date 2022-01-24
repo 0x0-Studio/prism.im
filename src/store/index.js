@@ -7,6 +7,8 @@ Vue.use(Vuex);
 
 const store = new Vuex.Store({
   state: {
+    currentRoom: 1,
+    momTyping: false,
     isTyping: false,
     gameState: 'writeDiary',
     end: "bad",
@@ -244,6 +246,9 @@ const store = new Vuex.Store({
       this.npcConv = state.data.npc;
       this.playerConv = state.data.player;
     },
+    setCurrentRoom(state, roomId) {
+      state.currentRoom = roomId;
+    },
     setIsTyping(state, isTyping) {
       state.isTyping = isTyping;
     },
@@ -278,9 +283,6 @@ const store = new Vuex.Store({
             state.gameState = 'diaryYesterday';
             break;
           default:
-            setTimeout(() => {
-              state.isTyping = true;
-            }, 100);
             var time = 0;
             var unullCount = 0;
             for (let j in this.npcConv[k]) {
@@ -290,7 +292,11 @@ const store = new Vuex.Store({
             }
             for (let i in this.npcConv[k]) {
               if(this.npcConv[k][i] !== 0) {
-                time += this.npcConv[k][i].body.length * 150;
+                setTimeout(() => {
+                  state.momTyping = true;
+                  state.isTyping = true;
+                }, 100);
+                time += this.npcConv[k][i].body.length * 250;
                 setTimeout(() => {
                   state.me.push({
                     _id: this.npcConv[k][i].id,
@@ -301,8 +307,20 @@ const store = new Vuex.Store({
                     date: "21 July",
                     timestamp: dayjs().format("HH:mm"),
                     to: this.npcConv[k][i].to,
-                  })
+                  });
+                  setTimeout(() => {
+                    if (state.currentRoom !== 1) {
+                      this.$app.$notification.show(
+                        "来自 Me 的新消息",
+                        {
+                          body: this.npcConv[k][i].body,
+                        },
+                        {}
+                      );
+                    }
+                  }, 100);
                   if (parseInt(i) === unullCount - 1) {
+                    state.momTyping = false;
                     state.isTyping = false;
                     if (this.npcConv[k][i].id === '1.4.1') {
                       resolve('needAsk');
