@@ -3,7 +3,7 @@
         <img class="logo" src="@/assets/logo.png">
         <div style="margin-bottom: 30px; font-size: 30px">prism.im</div>
         <div style="padding-inline: 20%;">
-          <div style="margin-bottom: 20px; position: relative;">
+          <div class="disable-point" style="margin-bottom: 20px; position: relative;">
             <b-input style="" placeholder="" type="password" rounded/>
             <vue-typer
               style="position: absolute; top: 20%; left: calc(50% - 60px);"
@@ -13,7 +13,7 @@
               :shuffle="true"
             ></vue-typer>
           </div>
-          <div style="margin-bottom: 20px; position: relative;">
+          <div class="disable-point" style="margin-bottom: 20px; position: relative;">
             <b-input style="margin-bottom: 20px;" placeholder="" type="password" rounded/>
             <vue-typer
               style="position: absolute; top: 20%; left: calc(50% - 60px); font-size: 20px"
@@ -60,5 +60,9 @@ export default {
 .login-content {
   width: 50%;
   text-align: center;
+}
+
+.disable-point {
+  pointer-events: none;
 }
 </style>
