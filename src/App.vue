@@ -179,6 +179,7 @@ html {
   height: 100%;
   width: 100%;
   user-select: none !important;
+  overflow-y: auto !important;
 }
 body {
   margin: "" !important;

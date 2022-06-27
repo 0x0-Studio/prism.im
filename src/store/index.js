@@ -241,6 +241,13 @@ const store = new Vuex.Store({
     ]
   },
   mutations: {
+    initializeStore(state) {
+      if (localStorage.getItem('store')) {
+        this.replaceState(
+          Object.assign(state, JSON.parse(localStorage.getItem('store')))
+        );
+      }
+    },
     init(state) {
       state.data = parseJsonToData();
       this.npcConv = state.data.npc;
@@ -371,6 +378,10 @@ const store = new Vuex.Store({
       });
     },
   }
+})
+
+store.subscribe((mutation, state) => {
+  localStorage.setItem("state", JSON.stringify(state));
 })
 
 export default store;

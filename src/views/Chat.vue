@@ -20,10 +20,10 @@
     >
       <template #room-header-info="{ room, userStatus }">
         <div>
-          <b-tooltip :label="room.roomDesc" position="is-right">
+          <b-tooltip :label="room.roomDesc" position="is-bottom">
             <div style="font-weight: bold">{{ room.roomName }}</div>
+            <div>{{ userStatus }}</div>
           </b-tooltip>
-          <div>{{ userStatus }}</div>
         </div>
         <div style="position: absolute; width: 100px; height: 30px; left: 50%; font-size: 16px; " v-if="isTyping">正在输入...</div>
       </template>
